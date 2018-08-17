@@ -30,7 +30,7 @@ app.use(cors());
 
 
 // HOME Route
-app.get('/', (req, res)=>{res.send(database.users) })
+app.get('/', (req, res)=>{res.send('It is working') })
 //SIGNIN route
 app.post('/signin', signin.handleSignin(db, bcrypt) );
 //REGISTER Route
